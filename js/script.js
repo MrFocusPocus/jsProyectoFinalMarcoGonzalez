@@ -68,6 +68,10 @@ class Persona {
             }
             else{
                 console.log(`${propiedad}: ${this[propiedad]}`)
+                if(propiedad == 'nombre'){
+                    let elem_nombre = document.getElementById("nombre_persona")
+                    elem_nombre.innerText = `${this[propiedad]}`
+                }
             }
         }
         console.log()
